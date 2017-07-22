@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<label for="wheelDelta">滚动值:</label>(IE/Opera)<input type="text" id="wheelDelta"/>
+	</body>
+	<script type="text/javascript"> 
+		var scrollFunc=function(e){ 
+    		e=e || window.event; 
+    		var t1=document.getElementById("wheelDelta"); 
+    		if(e.wheelDelta){//IE/Opera/Chrome 
+        		t1.value=e.wheelDelta; 
+    		}
+		} 
+		/*注册事件*/ 
+		if(document.addEventListener){ 
+    		document.addEventListener('DOMMouseScroll',scrollFunc,false); 
+		}//W3C 
+		window.onmousewheel=document.onmousewheel=scrollFunc;//IE/Opera/Chrome 
+</script>
+</html>
