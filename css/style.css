@@ -714,6 +714,10 @@ li {
 	margin-top: 30px;
 }
 
+#case_list li{
+	cursor: pointer;
+}
+
 #case_list li:hover .case_detail_mask{
 	opacity: 0.5;
 }
@@ -755,6 +759,58 @@ li {
 	border-bottom: 2px solid #000000;
 }
 
+.case_banner{
+	width: 100%;
+	margin-top: 60px;
+}
+
+.case_banner img{
+	width: 100%;
+}
+
+.case_introduce{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background: #F9FBFB;
+}
+
+.case_introduce_body{
+	width: 1300px;
+	height: auto;
+	overflow: hidden;
+	background: #FFFFFF;
+	margin: 0 auto;
+	padding-bottom: 60px;
+	margin-top: 40px;
+}
+
+.case_introduce_words{
+	color: #666666;
+	font-family: "microsoft yahei";
+	font-size: 14px;
+	line-height: 24px;
+	margin-top: 40px;
+	padding: 0 50px;
+	box-sizing: border-box;
+}
+
+.case_introduce_body ul{
+	width: 980px;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.case_introduce_body ul li{
+	float: left;
+	width: 400px;
+	margin-top: 40px;
+}
+
+.case_introduce_body ul li:nth-of-type(2n+1){
+	margin-right: 180px;
+}
 
 
 
