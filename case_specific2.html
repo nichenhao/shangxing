@@ -8,27 +8,40 @@
 	<body>
 		<div class="case_specific">
 			<div class="head">
-				<div class="shangxing_logo"><img src="images/Nav_LOGO_black.png"/></div>
+				<div class="shangxing_logo">
+					<img src="images/Nav_LOGO_black.png"/>
+				</div>
 				<ul class="head_nav black_">
-					<li>Ability</li>
-					<li>Case</li>
-					<li>About</li>
-					<li>Contact</li>
+					<li class="Ability_nav"><a href="index2.html#Ability">Ability</a></li>
+					<li class="Case_nav"><a href="index2.html#Case">Case</a></li>
+					<li class="About_nav"><a href="index2.html#About">About</a></li>
+					<li class="Contact_nav"><a href="index2.html#Contact">Contact</a></li>
 					<li>400-88659360</li>
 				</ul>
 			</div>
 			
-			<div class="case_banner"><img src="images/title_GreenRecovery.png"/></div>
+			<div class="case_banner">
+				<!--<img src="images/title_GreenRecovery.png"/>-->
+			</div>
 			
 			<div class="case_introduce">
 				<div class="case_introduce_body">
 					<div class="case_specific2_img">
-						<img src="images/KissKissFish_contact.png"/>
+						<!--<img src="images/KissKissFish_contact.png"/>-->
 					</div>
+					<!--<div class="return"><a href="case_list.html">返回</a></div>-->
 				</div>
+				
 			</div>
 		</div>
 	</body>
 	<script src="js/jquery.min.js"></script>
-	<script src="js/case_specific1.js"></script>
+	<script src="js/case_specific2.js"></script>
+	<script>
+		$(function(){
+			$('.shangxing_logo').click(function(){
+				window.location = "index.html";
+			});
+		})
+	</script>
 </html>

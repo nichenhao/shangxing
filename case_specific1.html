@@ -10,10 +10,10 @@
 			<div class="head">
 				<div class="shangxing_logo"><img src="images/Nav_LOGO_black.png"/></div>
 				<ul class="head_nav black_">
-					<li>Ability</li>
-					<li>Case</li>
-					<li>About</li>
-					<li>Contact</li>
+					<li class="Ability_nav"><a href="index2.html#Ability">Ability</a></li>
+					<li class="Case_nav"><a href="index2.html#Case">Case</a></li>
+					<li class="About_nav"><a href="index2.html#About">About</a></li>
+					<li class="Contact_nav"><a href="index2.html#Contact">Contact</a></li>
 					<li>400-88659360</li>
 				</ul>
 			</div>
@@ -24,7 +24,7 @@
 			
 			<div class="case_introduce">
 				<div class="case_introduce_body">
-					<div class="case_introduce_words">大象回收是一块工具类APP，主要是针对手机行业的二手手机回收，通过调用手机里的硬件接口，检测手机硬件和软件性能，给出估计。APP分为客户端和营业厅端，客户端只要用户检测手机的性能；营业厅端给出手机的估价，并记录回收信息和提成信息。</div>
+					<div class="case_introduce_words"></div>
 					<ul>
 						<!--<li><img src="images/33333333333.jpg"/></li>
 						<li><img src="images/33333333333.jpg"/></li>
@@ -33,10 +33,19 @@
 						<li><img src="images/33333333333.jpg"/></li>
 						<li><img src="images/33333333333.jpg"/></li>-->
 					</ul>
+					<!--<div class="return"><a href="case_list.html">返回</a></div>-->
 				</div>
+				
 			</div>
 		</div>
 	</body>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/case_specific1.js"></script>
+	<script>
+		$(function(){
+			$('.shangxing_logo').click(function(){
+				window.location = "index.html";
+			});
+		})
+	</script>
 </html>
