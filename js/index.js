@@ -38,10 +38,10 @@ $(function() {
 	
 	
 	$('.more_arrow').click(function(){
-		$('.catalog').animate({top:"0"})
+		$('.catalog').animate({top:""})
 	})
 	$('.shangxing_logo').click(function(){
-		$('.catalog').animate({top:"100%"})
+		$('.catalog').animate({top:"100vh"},10)
 	})
 	
 	
@@ -59,6 +59,46 @@ $(function() {
 	$('.Contact_nav').click(function(){
 		document.body.scrollTop=document.body.scrollHeight;
 	})
+	
+	
+	
+	
+	var box=document.getElementById("box");
+		 // 添加滚动事件
+		if(box.addEventListener){
+			box.addEventListener("mousewheel",scroll,false);//谷歌
+			box.addEventListener("DOMMouseScroll",scroll,false)//火狐
+		}else{
+			box.attachEvent("onmousewheel",scroll)//IE
+		}
+		function scroll(e){
+			var ev=e||window.event
+			/*阻止浏览器的默认动作*/
+			if(ev.preventDefault){
+				ev.preventDefault();//火狐谷歌
+			}else{
+				ev.returnValue=false;//IE
+			}
+			/*获取滚轮的方向*/
+			// ev.wheelDelat是谷歌和IE的方向
+			// ev.detail是判断火狐的方向
+			var direction=ev.wheelDelta||ev.detail;
+			if(direction==120||direction==-3){
+				up.call(box);
+			}else if(direction==-120||direction==3){
+				down.call(box);
+			}
+		}
+		function up(){
+			$(".catalog").stop().animate({
+               	top:"100vh"  
+            },400);
+		}
+		function down(){
+			$(".catalog").stop().animate({
+               	top:"0"  
+            },400);
+		}
 })
 
 

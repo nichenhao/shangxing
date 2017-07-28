@@ -8,9 +8,16 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
+	/*overflow: hidden;*/
 	font-size: 12px;
 	font-family: "微软雅黑";
+}
+
+.box{
+	width: 100%;
+	height: 100vh;
+	position: relative;
 }
 
 .mask {
@@ -90,7 +97,7 @@ li {
 .top_floor_words {
 	width: 630px;
 	height: 228px;
-	position: fixed;
+	position: absolute;
 	left: 50%;
 	top: 50%;
 	margin: -114px 0 0 -315px;
@@ -139,9 +146,9 @@ li {
 .more_arrow {
 	width: 60px;
 	height: 60px;
-	position: fixed;
+	position: absolute;
 	left: 50%;
-	bottom: 80px;
+	top: 85vh;
 	margin-left: -30px;
 	z-index: 99999;
 	animation: myfirst 2s linear infinite alternate;
@@ -151,12 +158,13 @@ li {
 .catalog {
 	width: 100%;
 	height: 100%;
+	/*height: auto;*/
 	background: #FFFFFF;
 	overflow: hidden;
 	overflow-y: scroll;
-	position: fixed;
+	position: absolute;
 	left: 0;
-	top: 100%;
+	top: 100vh;
 	background: #FFFFFF;
 	z-index: 9999999;
 }

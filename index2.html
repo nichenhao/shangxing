@@ -4,23 +4,24 @@
 		<meta charset="UTF-8">
 		<title>上行科技</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-		
 	</head>
 	<body>
 		<div class="catalog2">
 			<a name="Ability"></a>
-			<div class="head">
-				<div class="shangxing_logo"><img src="images/Nav_LOGO_black.png"/></div>
-				<ul class="head_nav black_">
-					<li class="Ability_nav"><a href="#Ability">Ability</a></li>
-					<li class="Case_nav"><a href="#Case">Case</a></li>
-					<li class="About_nav"><a href="#About">About</a></li>
-					<li class="Contact_nav"><a href="#Contact">Contact</a></li>
-					<li>400-88659360</li>
-				</ul>
+			<div style="width: 100%;background: #FFFFFF;z-index: 9999999999;position: fixed;left: 0;top: 0;">
+				<div class="head">
+					<div class="shangxing_logo"><img src="images/Nav_LOGO_black.png"/></div>
+					<ul class="head_nav black_">
+						<li class="Ability_nav"><a href="#Ability">Ability</a></li>
+						<li class="Case_nav"><a href="#Case">Case</a></li>
+						<li class="About_nav"><a href="#About">About</a></li>
+						<li class="Contact_nav"><a href="#Contact">Contact</a></li>
+						<li>400-88659360</li>
+					</ul>
+				</div>
 			</div>
 			
-			<div class="ability">
+			<div class="ability" style="margin-top: 78px;">
 				<div class="ability_title">Ability</div>
 				<div class="ability_boder_top"></div>
 				<div class="ability_box1">
@@ -117,16 +118,15 @@
 						<div class="ability_point3">
 							<img id="ability_point3_img" src="images/Icon_technology_normal.png"/>
 							<div class="ability_point3_title">技术</div>
+							<a name="Case"></a>
 							<div class="ability_point3_article">国际主流技术架构，人性化的服务系统方便内容管理维护及数据搜索备份等。</div>
 						</div>
 					</div>
-					
 				</div>
 			</div>
 			
-			<a name="Case"></a>
+			
 			<div class="case">
-				
 				<div class="case_title">Case</div>
 				<div class="ability_boder_top"></div>
 				<ul class="case_nav">
@@ -161,13 +161,17 @@
 							<img src="images/Icon_logo_NiurenWharf.png"/>
 							<div class="case_logo_name">牛人码头</div>
 						</div>
+						
 					</li>
 				</ul>
+				<a name="About"></a>
 				<div class="more_case"><a href="case_list.html">更多案例+</a></div>
+				
 			</div>
 		
+			
 			<div class="about">
-				<a name="About"></a>
+				
 				<img src="images/img_about_bg.png"/>
 				<!--<div class="about_mask"></div>-->
 				<div class="about_content">
@@ -238,4 +242,11 @@
 	</body>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/index2.js"></script>
+	<script>
+		$(function(){
+			$('.shangxing_logo').click(function(){
+				window.location = 'index.html';
+			})
+		})
+	</script>
 </html>

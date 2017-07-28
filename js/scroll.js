@@ -78,7 +78,7 @@ scroll.prototype = {
 		var cells = ball.children;
 		//设置容器样式
 		box.style.cssText = 'position:relative;overflow:hidden;';
-		box.style.height = (h + (w/list.length)) +'px';
+//		box.style.height = (h + (w/list.length)) +'px';
 		//设置图片容器样式
 		ball.style.cssText = 'position:absolute;left:0;top:0;overflow:hidden;width:'+(cells.length+1)*w+'px;';
 		for(var i = 0;i < cells.length;i++){
