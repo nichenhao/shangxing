@@ -38,10 +38,21 @@ $(function() {
 	
 	
 	$('.more_arrow').click(function(){
-		$('.catalog').animate({top:""})
+		$('.catalog').animate({top:""},100)
+		$('.hide_box').animate({
+            	opacity:"1"
+            },500);
 	})
 	$('.shangxing_logo').click(function(){
 		$('.catalog').animate({top:"100vh"},10)
+		$('.hide_box').animate({
+            	opacity:"0"
+            },10);
+	})
+	
+	$('.border_bottom1').click(function(){
+		var s = $(this).index();
+		sessionStorage.setItem('key1',s);
 	})
 	
 	
@@ -93,13 +104,21 @@ $(function() {
 			$(".catalog").stop().animate({
                	top:"100vh"  
             },400);
+            $('.hide_box').animate({
+            	opacity:"0"
+            },500);
 		}
 		function down(){
 			$(".catalog").stop().animate({
                	top:"0"  
-            },400);
+            },100);
+            $('.hide_box').animate({
+            	opacity:"1"
+            },500);
 		}
 })
+
+
 
 
 

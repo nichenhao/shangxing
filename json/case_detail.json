@@ -113,52 +113,52 @@
 	"YSBB":
 	[
 		{
-			"detail_img":"images/YSBB/1111118.jpg"
+			"detail_img":"images/YSBB/1111118.png"
 		},
 		{
-			"detail_img":"images/YSBB/1111119.jpg"
+			"detail_img":"images/YSBB/1111119.png"
 		},
 		{
-			"detail_img":"images/YSBB/1111120.jpg"
+			"detail_img":"images/YSBB/1111120.png"
 		},
 		{
-			"detail_img":"images/YSBB/1111121.jpg"
+			"detail_img":"images/YSBB/1111121.png"
 		},
 		{
-			"detail_img":"images/YSBB/1111122.jpg"
+			"detail_img":"images/YSBB/1111122.png"
 		}
 	],
 	"motherPoint":
 	[
 		{
-			"detail_img":"images/motherPoint/111119.jpg"
+			"detail_img":"images/motherPoint/111119.png"
 		},
 		{
-			"detail_img":"images/motherPoint/1111110.jpg"
+			"detail_img":"images/motherPoint/1111110.png"
 		},
 		{
-			"detail_img":"images/motherPoint/1111111.jpg"
+			"detail_img":"images/motherPoint/1111111.png"
 		},
 		{
-			"detail_img":"images/motherPoint/1111112.jpg"
+			"detail_img":"images/motherPoint/1111112.png"
 		},
 		{
-			"detail_img":"images/motherPoint/1111113.jpg"
+			"detail_img":"images/motherPoint/1111113.png"
 		}
 	],
 	"datedate":
 	[
 		{
-			"detail_img":"images/datedate/111115.jpg"
+			"detail_img":"images/datedate/111115.png"
 		},
 		{
-			"detail_img":"images/datedate/111116.jpg"
+			"detail_img":"images/datedate/111116.png"
 		},
 		{
-			"detail_img":"images/datedate/111117.jpg"
+			"detail_img":"images/datedate/111117.png"
 		},
 		{
-			"detail_img":"images/datedate/111118.jpg"
+			"detail_img":"images/datedate/111118.png"
 		}
 	]
 }

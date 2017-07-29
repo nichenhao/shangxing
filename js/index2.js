@@ -32,6 +32,26 @@ $(function() {
 	$('.Contact_nav').click(function(){
 		document.body.scrollTop=document.body.scrollHeight;
 	})
+	
+	$('.shangxing_logo').click(function(){
+		window.location = 'index.html';
+	})
+	
+	var S = sessionStorage.getItem('key1');
+	var p = $('.black_ li');
+	var li_arr = [];
+	for(var q = 0;q < p.length;q++){
+		li_arr.push(p[q]);
+		$(li_arr[q]).css("border-bottom-color","#ffffff");
+	}
+	
+	$(li_arr[S]).css("border-bottom-color","#000000")
+	
+	
+	$('.border_bottom').click(function(){
+		$(this).css("border-bottom-color","#000000");
+		$(this).siblings('.border_bottom').css("border-bottom-color","#FFFFFF");
+	})
 })
 
 
