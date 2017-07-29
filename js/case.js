@@ -67,7 +67,7 @@ $.ajax({
 		
 		$('#case_list li').click(function(){
 			var index = $(this).index();
-			alert(index);
+//			alert(index);
 			sessionStorage.setItem("key",index);
 			if(index == 0||index == 4){
 				window.location = "case_specific2.html";

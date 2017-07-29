@@ -53,14 +53,3 @@ $(function() {
 		$(this).siblings('.border_bottom').css("border-bottom-color","#FFFFFF");
 	})
 })
-
-
-
-
-
-
-
-
-
-
-
