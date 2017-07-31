@@ -41,3 +41,8 @@ $.ajax({
 		
 	}
 });
+
+$('.border_bottom1').click(function(){
+	var s = $(this).index();
+	sessionStorage.setItem('key1',s);
+})

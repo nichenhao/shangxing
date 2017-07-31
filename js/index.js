@@ -55,7 +55,6 @@ $(function() {
 		sessionStorage.setItem('key1',s);
 	})
 	
-	
 	$('.case_nav li').click(function(){
 		var index = $(this).index();
 //		alert(index);
